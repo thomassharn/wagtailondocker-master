@@ -1,0 +1,16 @@
+service:
+  externalPort: 1337
+  internalPort: 1337
+
+livenessProbe:
+  initialDelaySeconds: 90
+  timeoutSeconds: 90
+
+readinessProbe:
+  initialDelaySeconds: 90
+  timeoutSeconds: 90
+
+appdat:
+  auth:
+    gatekeeper:
+      enabled: true
